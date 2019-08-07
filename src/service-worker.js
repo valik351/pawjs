@@ -22,7 +22,7 @@ serviceWorker.workbox.routing.registerRoute(
   serviceWorker.workbox.strategies.networkOnly(),
 );
 
-const assetsRegExp = /\.(css|js|jpg|png|jpeg|gif|woff|woff2|ttf|eot|ico|mp4|avi)$/;
+const assetsRegExp = /\.(css|js|jpg|png|jpeg|gif|woff|woff2|ttf|eot|ico|mp4|avi|mp3|wav|ogg)$/;
 
 const networkFirstHandler = serviceWorker.workbox.strategies.networkFirst();
 const cacheFirstHandler = serviceWorker.workbox.strategies.cacheFirst();
